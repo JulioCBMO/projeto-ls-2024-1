@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/logo books ellipse.png" type="image/x-icon">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
+  <title>LivroPub</title>
+</head>
+<body>
+  <!--BARRA DE NAVEGAÇÃO FIXA-->
+  <nav class="barra-fixa">
+    <a href="index.html"><img src="../images/logo books ellipse.png" alt="" class="logo"></a>
+    <ul class="opcoes">
+      <li class="li-busca">
+        <form method="post">
+          <section class="div-busca">
+            <input type="text" id="id-busca" name="busca" placeholder="Dom Casmurro..." class="txt-busca">
+            <label for="id-busca" style="display: flex;">
+              <iconify-icon icon="material-symbols:search" class="lupa"></iconify-icon>
+            </label>
+          </section>
+        </form>
+      </li>
+      <li class=" link sub"><a href='#'>Recomendados</a></li>
+      <li class=" link sub"><a href='#'>Categorias</a></li>
+      <li class=" link login-grid">
+        <button class="button-login shadow">
+
+          <a href="../login/login.html" class="login">Login
+            <iconify-icon icon="material-symbols:login" class="span-login"></iconify-icon>
+          </a>
+        </button>
+      </li>
+      <li class="icone-menu">  
+      <span class="material-symbols-outlined span-menu">menu</span>
+      </li>
+    </ul>   
+  </nav>
+
+  <!--MENU-HAMBURGUER-->
+  <section class="secao-menu">
+    <div class="menu-hamburguer">
+      <ul class="opcoes-menu">
+        <li class="opcao"><a href='#'>Recomendados</a></li>
+        <li class="opcao borda-menu"><a href='#'>Categorias</a></li>
+        <li class="opcao login-menu">
+          <button class="button-login shadow">
+            <a href="../login/login.html" class="login">Login
+              <iconify-icon icon="material-symbols:login" class="span-login"></iconify-icon>
+            </a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!-- CABEÇALHO -->
+  <header> 
+    <section class="header">
+      <h1>BIBLIOTECA DE LIVROS
+        COM DOMÍNIO PÚBLICO</h1>
+      <h2>Conheça nossa variedade de livros</h2>
+
+      <a href="#">
+        <button class="categoria">Ver Categorias</button>
+      </a>
+    </section>
+  </header>
+
+<!-- CONTEÚDO PRINCIPAL -->
+  <main> 
+    <section id="um"> <!-- SESSÃO CARROSSEL -->
+      <h1 class="titulos">POPULARES</h1>
+      <section class="div-carrossel">
+      <button class="seta-dir control" aria-label="next image">
+        <iconify-icon icon="ic:baseline-play-arrow"></iconify-icon>
+      </button>
+      <button class="seta-esq control" aria-label="previous image">
+        <iconify-icon icon="ic:baseline-play-arrow" rotate="180deg"></iconify-icon>
+      </button>
+      <div class="carrossel-wrapper">  
+        <div class="carrossel">
+          <a >
+          <img src="../images/20_mil_leguas.jpg" class="img current-img">
+          </a>
+          <a >
+          <img src="../images/cortico.jpg" class="img">
+          </a>
+          <a >
+          <img src="../images/ilha_tesouro.jpg" class="img">
+          </a>
+          <a >
+          <img src="../images/divina_comedia.jpg" class="img">
+          </a>
+          <a >
+          <img src="../images/dom_casmurro.jpg" class="img">
+          </a>
+          <a >
+          <img src="../images/viagem_centro_terra.webp" class="img">
+        </div>
+      </div>
+      </section>
+    </section>
+
+    <section id="dois"> <!-- SESSÃO CATEGORIA BRASILEIRA -->
+      <h1 class="titulos">BRASILEIROS</h1>
+      <div class="livros-br">
+
+        <picture >
+          <img src="../images/cortico.jpg" alt="" class="livro-brasil">
+          <p>Cortiço</p>
+        </picture>
+        <picture>          
+          <img src="../images/dom_casmurro.jpg" alt="" class="livro-brasil">
+          <p>Dom Casmurro</p>
+        </picture>
+
+        <picture>          
+          <img src="../images/O-Ateneu.jpg" alt="" class="livro-brasil">
+          <p>O Ateneu</p>
+        </picture>
+
+        <picture>
+          <img src="../images/Policarpo_Quaresma.jpg" alt="" class="livro-brasil">
+          <p>Triste Fim de Policarpo Quaresma</p>
+        </picture>
+
+        <picture>          
+          <img src="../images/dom_casmurro.jpg" alt="" class="livro-brasil">
+          <p>Dom Casmurro</p>
+        </picture> 
+
+        <picture>          
+          <img src="../images/cortico.jpg" alt="" class="livro-brasil">
+          <p>Cortiço</p>
+        </picture>
+
+        <picture>          
+          <img src="../images/O-Ateneu.jpg" alt="" class="livro-brasil">
+          <p>O Ateneu</p>
+        </picture>
+
+        <picture>          
+          <img src="../images/cortico.jpg" alt="" class="livro-brasil">
+          <p>Cortiço</p>
+        </picture>
+
+        <picture>        
+          <img src="../images/dom_casmurro.jpg" alt="" class="livro-brasil">
+          <p>Dom Casmurro</p>
+        </picture> 
+      </div> 
+        <a href="#">
+          <button class="ver-mais">Ver Mais</button>
+        </a>
+
+    </section>
+
+    <section id="tres"> <!-- SESSÃO AVALIAÇÃO -->
+      <h1 class="titulos">Avaliações</h1>
+      <div class="div-avaliacoes">
+        <div id="comment-section" class="div-pessoa1" >
+          <input type="text" id="user-name" placeholder="Seu nome" required>
+          <textarea id="comment-input" placeholder="Digite seu comentário aqui" required></textarea>
+          <label for="rating"></label>
+          <select id="rating" required>
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+              <option value="2">★★☆☆☆ (2)</option>
+              <option value="1">★☆☆☆☆ (1)</option>
+              <option value="0">☆☆☆☆☆ (0)</option>
+          </select>
+
+          <button id="add-comment-btn" class= "ver-mais">Adicionar Comentário</button>
+        </div>
+        <div id="comments-container">
+        </div>
+      </div>
+      <!-- <div class="mapa"> -->
+        <h1 class="titulos">Presencial</h1>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3958.917285616891!2d-34.874946198917165!3d-7.135563576362043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810a2c5ee57%3A0xd1ba0df6e1ddffa7!2sBiblioteca%20Nilo%20Pe%C3%A7anha!5e0!3m2!1spt-BR!2sbr!4v1699574034097!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- </div> -->
+    </section>
+  </main>
+
+<!-- RODAPÉ -->
+  <footer> 
+    <section class="fim link">
+      <a href="#">Sobre Nós</a>
+      <a href="#">Termos de Uso</a>
+      <p>Redes Sociais</p>
+      <a href="#">Política de Privacidade</a>
+      <a href="creditos.html">Créditos</a>
+      <section class="redes">   
+        <iconify-icon icon="logos:whatsapp-icon" class="ic"></iconify-icon>
+        <iconify-icon icon="skill-icons:twitter" class="ic"></iconify-icon>
+        <iconify-icon icon="skill-icons:instagram" class="ic"></iconify-icon>
+        <iconify-icon icon="logos:facebook" class="ic"></iconify-icon>
+      </section>
+
+    </section>
+    <section class="fim2">
+      <br>
+      <p>
+        copyrigth 2023 - Disciplina de Linguagem de Marcação - IFPB - Todos os direitos reservados
+      </p>
+    </section>
+  </footer>
+  <script src="./carrossel.js"></script>
+  <script src="./menu.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
